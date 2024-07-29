@@ -358,8 +358,8 @@ table tr td {
     background: url(assets/images/dots.png), url(assets/images/accent1.png), url(assets/images/circles.png), url(assets/images/dots.png);
     background-color: #d1f2fd;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 10%, 25%, 350px, 10%;
-    background-position: 0 0, 120% 15%, -2% 106%, 105% 100%;
+    background-size: 10%, 45%, 350px, 10%;
+    background-position: 0 0, 157% 6%, -2% 108%, 105% 100%;
   }
 
   .lead {
