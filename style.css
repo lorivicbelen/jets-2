@@ -279,7 +279,7 @@ table tr td {
   margin: 0 auto;
   background: url(assets/images/text-bg.png) no-repeat;
   background-size: 100% 100%;
-  padding: 50px 36px 62px 35px;
+  padding: 50px 70px 62px 70px;
   margin-top: -50px;
   aspect-ratio: 4/2;
   display: flex;
@@ -331,7 +331,7 @@ table tr td {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 0 -18px;
+  object-position: center;
   border-radius: 100%;
 }
 
@@ -358,8 +358,8 @@ table tr td {
     background: url(assets/images/dots.png), url(assets/images/accent1.png), url(assets/images/circles.png), url(assets/images/dots.png);
     background-color: #d1f2fd;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: 10%, 45%, 350px, 10%;
-    background-position: 0 0, 157% 6%, -2% 108%, 105% 100%;
+    background-size: 10%, 25%, 350px, 10%;
+    background-position: 0 0, 120% 15%, -2% 106%, 105% 100%;
   }
 
   .lead {
@@ -392,6 +392,10 @@ table tr td {
 
   .btn.arrow::after {
     display: none;
+  }
+
+  .col--2 .wrapper .textbox {
+    padding: 50px 45px 62px 40px;
   }
 }
 
@@ -478,7 +482,7 @@ table tr td {
   }
 
   .col--2 .wrapper .textbox {
-    padding: 64px 47px 50px 42px;
+    padding: 64px 78px 50px 70px;
   }
 }
 
@@ -493,6 +497,10 @@ table tr td {
 
   .f-24 {
     font-size: 20px;
+  }
+
+  .col--2 .wrapper .textbox {
+    padding: 64px 52px 50px 48px;
   }
 }
 
