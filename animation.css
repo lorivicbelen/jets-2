@@ -1,0 +1,37 @@
+.animate-chars {
+    /* font-size: 40px; */
+    opacity: 0;
+    display: inline-block;
+    overflow: hidden;
+    min-height: fit-content;
+  
+  }
+  
+  .animate-chars span {
+    opacity: 0;
+    display: inline-block;
+    transition-behavior: normal;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1.08);
+    transition-property: all;
+    transform: translateY(100%);
+    will-change: transform;
+  }
+  
+  .fade-up {
+    /* font-size: 20px; */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-chars.visible span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
