@@ -592,7 +592,7 @@ section {
   body {
     background: url(assets/svg/bg-top.svg), url(assets/svg/bg-bot.svg);
     background-repeat: no-repeat, no-repeat;
-    background-size: 150%, 150%;
+    background-size: 150%, 170%;
     background-position: center top, center bottom;
   }
 
@@ -723,6 +723,10 @@ section {
 }
 
 @media (max-width: 430px) { 
+  br.pc {
+    display: none;
+  }
+
   .promo-bg {
     font-size: 16px;
   }
@@ -737,10 +741,6 @@ section {
   /* h1.text-center, h2 {
     text-align: left;
   } */
-
-  br.pc {
-    display: none;
-  }
 
   .promo-bg {
     font-size: 14px;
