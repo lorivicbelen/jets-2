@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(
   {threshold: 0.5}
 );
 
-document.querySelectorAll(".animate-chars, .fade-up").forEach((el) => observer.observe(el));
+document.querySelectorAll(".animate-chars, .fade-up, .reveal").forEach((el) => observer.observe(el));
 
 document.addEventListener("DOMContentLoaded", function () {
   const navIcon = document.querySelector("#nav-icon4");
