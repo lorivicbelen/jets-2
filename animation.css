@@ -1,0 +1,64 @@
+.animate-chars {
+    /* font-size: 40px; */
+    opacity: 0;
+    display: inline-block;
+    overflow: hidden;
+    min-height: fit-content;
+  
+  }
+  
+  .animate-chars span {
+    opacity: 0;
+    display: inline-block;
+    transition-behavior: normal;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1.08);
+    transition-property: all;
+    transform: translateY(100%);
+    will-change: transform;
+  }
+  
+  .fade-up {
+    /* font-size: 20px; */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .animate-chars.visible span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+/* Base animation: Initially hidden */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When element is visible */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  animation: bounceEffect 0.4s ease-out 0.3s forwards, wobbleEffect 0.3s ease-in-out 0.7s forwards;
+}
+
+/* Bounce effect */
+@keyframes bounceEffect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Wobble effect */
+@keyframes wobbleEffect {
+  0% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
